@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /**
+     * Bài toán sử dụng if
+     * Cho người dùng nhập vào 1 số.
+     * Nếu là số chẵn thì thông báo cho người dùng biết
+     */
+    // let num = parseInt(prompt("Mời bạn nhập vào số muốn kiểm tra: "));
+    // if (num % 2 === 0){
+    //   document.writeln("<h1>Chúc mừng bạn đã nhập được số chẵn</h1>")
+    // }
+
+    /**
+     * Bài toán sử dụng if-else
+     * Cho người dùng nhập vào 1 số.
+     * và thông báo cho người dùng biết số đó là số chẵn hay số lẽ
+     */
+    // let num = parseInt(prompt("Mời bạn nhập vào số muốn kiểm tra: "));
+    // let isEven = num % 2 === 0;
+    // if (isEven){
+    //   document.writeln("<h1>Chúc mừng bạn đã nhập được số chẵn</h1>")
+    // } else {
+    //   document.writeln("<h1>Chúc mừng bạn đã nhập được số lẻ</h1>")
+    // }
+
+    /**
+     * Bài toán sử dụng if-else lồng nhau
+     * Cho người dùng nhập vào 3 số a,b,c
+     * In ra màn hình số lớn nhất
+     */
+    // let num1 = parseInt(prompt("Mời bạn nhập vào số thứ 1: "));
+    // let num2 = parseInt(prompt("Mời bạn nhập vào số thứ 2: "));
+    // let num3 = parseInt(prompt("Mời bạn nhập vào số thứ 3: "));
+    // if (num1 > num2){
+    //   if (num1 > num3){
+    //     document.writeln("Số lớn nhất là: " + num1);
+    //   }else {
+    //     document.writeln("Số lớn nhất là: " + num3);
+    //   }
+    // }else {
+    //   if (num2 > num3){
+    //     document.writeln("Số lớn nhất là: " + num2);
+    //   }else {
+    //     document.writeln("Số lớn nhất là: " + num3);
+    //   }
+    // }
+
+    /**
+     * Bài toán sử dụng if-else bậc thang
+     * Cho giáo viên nhập điểm của 1 bạn sinh viên
+     * Kiểm tra xem nếu:
+     * 1. Điểm trung bình >= 9: Đạt học sinh xuất sắc
+     * 2. Điểm trung bình >= 8: Đạt học sinh giỏi
+     * 3. Điểm trung bình >= 7: Đạt học sinh khá
+     * 4. Điểm trung bình >= 6: Đạt học sinh trung bình
+     * 5. Điểm trung bình >= 5: Đạt học sinh yếu
+     * 6. Điểm trung bình < 5: Đạt học sinh kém
+     */
+    // let mark = parseInt(prompt("Mời bạn nhập điểm trung bình của sinh viên: "));
+    // if (mark >= 9) {
+    //     document.writeln("Sinh viên này đạt hạng xuất sắc");
+    // } else if (mark >= 8) {
+    //     document.writeln("Sinh viên này đạt hạng giỏi");
+    // } else if (mark >= 7){
+    //     document.writeln("Sinh viên này đạt hạng khá");
+    // } else if (mark >= 6){
+    //     document.writeln("Sinh viên này đạt hạng trung bình");
+    // } else if (mark >= 5){
+    //     document.writeln("Sinh viên này đạt hạng yếu");
+    // } else {
+    //     document.writeln("Sinh viên này đạt hạng kém");
+    // }
+
+    /**
+     * Bài toán sử dụng switch-case
+     * Cho người dùng nhập vào các số từ 0 đến 6
+     * in ra màn hình kết quả như sau
+     * nếu nhập 0: in ra hôm nay là chủ nhật
+     * nếu nhập 1: in ra hôm nay là thứ 2
+     * nếu nhập 2: in ra hôm nay là thứ 3
+     * nếu nhập 3: in ra hôm nay là thứ 4
+     * nếu nhập 4: in ra hôm nay là thứ 5
+     * nếu nhập 5: in ra hôm nay là thứ 6
+     * nếu nhập 6: in ra hôm nay là thứ 7
+     * */
+    let num = parseInt(prompt("Mời bạn nhập 1 số từ 0 đến 6"));
+    switch (num) {
+        case 0:
+            document.writeln("Hôm nay là chủ nhật");
+            document.writeln("<br>");
+            break;
+        case 1:
+            document.writeln("Hôm nay là thứ 2");
+            document.writeln("<br>");
+            break;
+        case 2:
+            document.writeln("Hôm nay là thứ 3");
+            document.writeln("<br>");
+            break;
+        case 3:
+            document.writeln("Hôm nay là thứ 4");
+            document.writeln("<br>");
+            break;
+        case 4:
+            document.writeln("Hôm nay là thứ 5");
+            document.writeln("<br>");
+            break;
+        case 5:
+            document.writeln("Hôm nay là thứ 6");
+            document.writeln("<br>");
+            break;
+        case 6:
+            document.writeln("Hôm nay là thứ 7");
+            document.writeln("<br>");
+            break;
+        default:
+            document.writeln("Bạn phải nhập từ 0 đến 6");
+    }
+
+</script>
+</body>
+</html>
