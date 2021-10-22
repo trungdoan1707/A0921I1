@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /**
+     * ví dụ 1: Sử dụng vòng lặp for để in 100 chữ hello ra màn hình
+     */
+    // for (let count = 0;count < 100; count++){
+    //     document.writeln("Hello " + "<br>");
+    // }
+
+    /**
+     * Sử dụng vòng lặp for để in bảng cửu chương 5
+     * 1 x 5 = 5
+     * 2 x 5 = 10
+     * 3 x 5 = 15
+     * 4 x 5 = 20
+     * ...
+     * 10 x 5 = 50
+     */
+    // for (let i = 1; i <= 10; i++){
+    //     document.writeln("5 x " + i + " = " + (i*5));
+    //     document.writeln("<br>");
+    // }
+
+    /**
+     * Viết lại chương trình in ra 100 chữ hello sử dụng vòng lặp while
+     */
+    // let count = 0;
+    // while (count < 100){
+    //     document.writeln("Hello " + "<br>");
+    //     count++;
+    // }
+
+    /**
+     * Sử dụng vòng lặp for để in bảng cửu chương 5
+     * 1 x 5 = 5
+     * 2 x 5 = 10
+     * 3 x 5 = 15
+     * 4 x 5 = 20
+     * ...
+     * 10 x 5 = 50
+     */
+    // let i = 1;
+    // while (i < 11) {
+    //     console.log("5 x " + i + " = " + (i * 5));
+    //     document.writeln("<br>");
+    //     i++;
+    // }
+
+    /**
+     * Cho người dùng nhập vào 1 số và hiện thị kết quả là số chẵn hay số lẻ.
+     * Sau khi in kết quả thì tiếp tục cho nhập lại số khác để kiểm tra
+     * Nếu người dùng nhập phím Q thì kết thúc chương trình
+     * Sử dụng while
+     */
+    // let num = prompt("Nhập số bạn muốn kiểm tra");
+    // while (num !== 'q'){
+    //     let isEven = num % 2 === 0;
+    //     if (isEven){
+    //         alert(num + " là số chẵn");
+    //     }else {
+    //         alert(num + " là số lẽ");
+    //     }
+    //     num = prompt("Nhập số bạn muốn kiểm tra");
+    // }
+
+    /**
+     * Cho người dùng nhập vào 1 số và hiện thị kết quả là số chẵn hay số lẻ.
+     * Sau khi in kết quả thì tiếp tục cho nhập lại số khác để kiểm tra
+     * Nếu người dùng nhập phím Q thì kết thúc chương trình
+     * Sử dụng do-while
+     */
+    // let num;
+    // do {
+    //     num = parseInt(prompt("Nhập số bạn muốn kiểm tra"));
+    //     if (!isNaN(num)) {
+    //         let isEven = num % 2 === 0;
+    //         if (isEven) {
+    //             alert(num + " là số chẵn");
+    //         } else {
+    //             alert(num + " là số lẽ");
+    //         }
+    //     }
+    // } while (!isNaN(num))
+
+    /**
+     * in bảng cửu chương từ 2 đến 9
+     * 2 x 1 = 2
+     * 2 x 2 = 4
+     * 2 x 3 = 6
+     * ...
+     * 3 x 1 = 3
+     * 3 x 2 = 6
+     * ...
+     * 9 x 1 = 9
+     * ...
+     * 9 x 10 = 90
+     */
+    for (let i = 2; i < 10; i++) {
+        for (let j = 1; j <= 10; j++) {
+            document.writeln(i + " x " + j + " = " + (i * j));
+            document.writeln("<br>");
+        }
+    }
+
+    /**
+     * Vẽ hình chữ nhật bằng dấu *
+     */
+    // for (let i = 0; i < 10; i++) {
+    //     for (let j = 0; j < 5; j++) {
+    //         document.writeln(" * ");
+    //     }
+    //     document.writeln("<br>");
+    // }
+
+</script>
+</body>
+</html>
