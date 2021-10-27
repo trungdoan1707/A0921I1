@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /**
+     * Cách 1: Khai báo mảng bằng dấu []
+     */
+    // let arr1 = ["Quốc Anh", "Phương Nhi", "Huệ Minh", "Lý Long"];
+
+    /**
+     * Cách 2: Khai báo mảng bằng new Array()
+     */
+    // let arr2 = new Array(1,2,3,4,5);
+
+    /**
+     * Cách 3: Khai báo mảng bằng Array()
+     */
+    // let arr3 = Array(3,4,5,6,7,8);
+
+    /**
+     * Bài 1: Khai báo mảng gồm tên các sinh viên, duyệt mảng bằng vòng lặp for và hiện thị danh sách
+     * ra màn hình
+     */
+    let arr1 = ["Quốc Anh", "Phương Nhi", "Huệ Minh", "Lý Long", "Hoàng Long"];
+    // for (let i = 0; i < arr1.length; i++) {
+    //     document.writeln("Sinh viên " + (i + 1) + " tên là: " + arr1[i] + "<br>");
+    // }
+
+    /**
+     * Bài 2: Yêu cầu như bài 1 nhưng sử dụng for - in
+     */
+    // for (let index in arr1){
+    //     document.writeln("Sinh viên " + (parseInt(index) + 1) + " tên là: " + arr1[index] + "<br>");
+    // }
+
+    /**
+     * Bài 3: Yêu cầu như bài 1 nhưng sử dụng for - of
+     */
+    // for (let student of arr1){
+    //     document.writeln("Tên sinh viên là: " + student);
+    //     document.writeln("<br>");
+    // }
+
+    /**
+     * bài 4: yêu cầu như bài 1 nhưng sử dụng foreach()
+     * //Không bắt buộc, chỉ nói thêm cho các bạn thích tìm hiểu
+     */
+    // arr1.forEach(student => {
+    //     document.writeln("Tên sinh viên là: " + student);
+    //     document.writeln("<br>");
+    // })
+</script>
+</body>
+</html>

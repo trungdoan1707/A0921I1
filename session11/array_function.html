@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let students = ["Quốc Anh", "Hoàng Long", "Lý Long", "Huệ Minh"];
+
+    /**
+     * push(): Thêm phần tử vào cuối mảng
+     */
+    students.push("Thái Ngọc");
+    document.writeln("<h3>Mảng sau khi thêm </h3>");
+    for (let student of students) {
+        document.writeln("Tên sinh viên: " + student);
+        document.writeln("<br>");
+    }
+
+    /**
+     * pop(): xóa phần tử ở cuối mảng
+     */
+    students.pop();
+    document.writeln("<h3>Mảng sau khi xóa bằng pop() </h3>");
+    for (let student of students) {
+        document.writeln("Tên sinh viên: " + student);
+        document.writeln("<br>");
+    }
+
+    /**
+     * unshift(): Thêm phần tử ở đầu mảng
+     */
+    students.unshift("Phương Nhi");
+    document.writeln("<h3>Mảng sau khi thêm bằng unshift() </h3>");
+    for (let student of students) {
+        document.writeln("Tên sinh viên: " + student);
+        document.writeln("<br>");
+    }
+
+    /**
+     * shift(): xóa phần tử ở đầu mảng
+     */
+    students.shift();
+    document.writeln("<h3>Mảng sau khi xóa bằng shift() </h3>");
+    for (let student of students) {
+        document.writeln("Tên sinh viên: " + student);
+        document.writeln("<br>");
+    }
+
+    /**
+     * reverse(): đảo ngược các phần tử trong mảng
+     */
+    students.reverse();
+    document.writeln("<h3>Mảng sau khi đảo ngược bằng reverse() </h3>");
+    for (let student of students) {
+        document.writeln("Tên sinh viên: " + student);
+        document.writeln("<br>");
+    }
+
+    /**
+     * join(): nối các phần tử trong mảng thành 1 chuỗi
+     */
+    document.writeln("<h3>Mảng sau khi nối bằng join() </h3>");
+    document.writeln(students.join("-----"));
+
+    /**
+     * toString(): Chuyển mảng thành chuỗi
+     */
+    document.writeln("<h3>Mảng sau khi sử dụng toString() </h3>");
+    document.writeln(students.toString());
+
+    /**
+     * sort(): dùng để sắp xếp các phần tử trong mảng theo thứ tự alphabet
+     */
+    document.writeln("<h3>Mảng sau khi sử dụng sort() </h3>");
+    students.push("Anh Nguyễn");
+    document.writeln(students.sort().join("--"))
+
+    /**
+     * Lưu ý khi sử dụng hàm sort() với kiểu số phải truyển vào function(a,b){return a-b};
+     */
+    document.writeln("<h3>Mảng số sau khi sử dụng sort() </h3>");
+    let numbers = [1, 44, 11, 35, 4, 5, 8];
+    document.writeln(numbers.sort(function (a, b) {
+        return b - a;
+    }).join("--"));
+</script>
+</body>
+</html>

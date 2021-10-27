@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  let students = [
+          ["Quốc Anh", 27, "Đà Nẵng", "quocanh@gmail.com"],
+          ["Lý Long", 23, "Quảng Nam", "lylong@gmail.com"],
+          ["Hoàng Long", 22, "Huế", "hoanglong@gmail.com"],
+          ["Thái Ngọc", 22, "Quảng Bình", "thaingoc@gmail.com"]
+  ]
+
+  /**
+   * Duyệt mảng 2 chiều bằng vòng lặp for
+   */
+  for(let i = 0; i < students.length; i++){
+    for (let j = 0; j < students[i].length; j++){
+      document.writeln(students[i][j]);
+    }
+    document.writeln("<br>");
+  }
+</script>
+</body>
+</html>
