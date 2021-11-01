@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /**
+     *Cho người dùng nhập vào 2 số bất kì và trả về tổng của 2 số
+     */
+    // function sum(a, b) {
+    //     return a + b;
+    // }
+    //
+    // let a1 = parseInt(prompt("mời bạn nhập giá trị cho số thứ 1: "));
+    // let b1 = parseInt(prompt("mời bạn nhập giá trị cho số thứ 2: "));
+    // let result = sum(a1, b1);
+    // result = result / 2;
+    // document.writeln("Trung bình cộng của 2 số là: " + result);
+
+    /**
+     * Cho người dùng nhập vào 1 số và trả về kết quả là dòng thông báo số chẵn hay số lẻ
+     */
+    function checkEven(num) {
+        let isEven = (num % 2 === 0);
+        if (isEven) {
+            return "Bạn đã nhập số chẵn";
+        }else {
+            return "Bạn đã nhập số lẽ";
+        }
+    }
+
+    let num = parseInt(prompt("Mời bạn nhập số cần kiểm tra: "));
+    let result = checkEven(num);
+    document.writeln(result);
+</script>
+</body>
+</html>
