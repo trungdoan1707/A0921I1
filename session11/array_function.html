@@ -84,7 +84,7 @@
      */
     document.writeln("<h3>Mảng số sau khi sử dụng sort() </h3>");
     let numbers = [1, 44, 11, 35, 4, 5, 8];
-    document.writeln(numbers.sort(function (a, b) {
+    document.writeln(numbers.sort((a, b) => {
         return b - a;
     }).join("--"));
 </script>
