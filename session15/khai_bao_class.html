@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function Student(name, age, email, mark, batch) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.mark = mark;
+        this.batch = batch;
+    }
+
+    let student1 = new Student("Nguyễn Văn A", 25, "nguyena@gmail.com", 8, "A0921I1");
+    // alert(student1.age);
+    let student2 = new Student("Nguyễn Văn B", 22, "nguyenb@gmail.com", 7, "A0921I1")
+    // alert(student2.name);
+    alert(student1 instanceof Student);
+    alert(student2 instanceof Student);
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Student {
+        constructor(name, age, address, email, mark) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+            this.email = email;
+            this.mark = mark;
+        }
+
+        go_to_school() {
+            alert("Sinh viên " + this.name + " đi học bằng xe máy");
+        }
+
+        di_thi() {
+            alert("Sinh viên đi thi hay có phao");
+        }
+    }
+
+    let student1 = new Student("Quốc Anh", 25, "Đà Nẵng", "quocanh@gmail.com", 7);
+    let student2 = new Student("Công Thịnh", 22, "Đà Nẵng", "congthinh@gmail.com", 7);
+    student1.go_to_school();
+    student2.go_to_school();
+
+    let student3 = {
+        name: "Nguyễn văn A",
+        age: 30,
+        address: "Quảng Nam",
+        email: "nguyenvana@gmail.com",
+        mark: 10
+    }
+    alert(student3.name);
+</script>
+</body>
+</html>
