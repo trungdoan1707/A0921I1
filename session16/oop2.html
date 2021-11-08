@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    /**
+     * Demo tính kế thừa
+     */
+    class Person {
+        constructor(name, age, address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+    }
+
+    class Student extends Person{
+        constructor(name, age, address, mark) {
+            super(name, age, address);
+            this.mark = mark;
+        }
+
+        di_thi() {
+            return "Sinh viên có khả năng đi thi";
+        }
+    }
+
+    class Teacher extends Person{
+        constructor(name, age, address, salary) {
+            super(name, age, address);
+            this.salary = salary;
+        }
+
+        di_day() {
+            return "Giáo viên phải đi dạy để kiếm lương";
+        }
+    }
+
+    let student1 = new Student("Kiên", 20, "Quảng Nam", 5);
+    alert(student1.name);
+    alert(student1.mark);
+</script>
+</body>
+</html>
